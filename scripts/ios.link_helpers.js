@@ -117,7 +117,7 @@ function writePlist(sourceDir, project, plist) {
 // based on: https://github.com/facebook/react-native/blob/1490ab1/local-cli/core/ios/findProject.js
 function findProject(folder) {
     const GLOB_PATTERN = '**/*.xcodeproj';
-    const IOS_BASE_PATTERN = /ios||\./;
+    const IOS_BASE_PATTERN = /ios/;
     const GLOB_EXCLUDE_PATTERN = ['**/@(Pods|node_modules)/**'];
 
     const projects = glob
